@@ -1,0 +1,32 @@
+#!/bin/bash
+
+
+function get_current_path {
+    # copied from http://stackoverflow.com/a/246128/1095379
+    SOURCE="${BASH_SOURCE[0]}"
+
+    # resolve $SOURCE until the file is no longer a symlink
+    while [ -h "$SOURCE" ]; do
+        DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+        SOURCE="$(readlink "$SOURCE")"
+
+        # if $SOURCE was a relative symlink, we need to resolve it relative to
+        # the path where the symlink file was located
+        [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
+    done
+    echo "$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+}
+DIR=$(get_current_path)
+
+if [ -f "$DIR/unipickerrc" ]; then
+    source "$DIR/unipickerrc"
+else
+    COMMAND="$DIR/fzf/bin/fzf"
+fi
+
+letter=$(cat "$DIR/symbols" | eval $COMMAND | sed -r 's/(.)(.*)/\1/g')
+
+if [ $? -eq 0 ]; then
+    echo $letter
+    echo -n $letter | xclip -selection clipboard
+fi
