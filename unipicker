@@ -18,7 +18,9 @@ function get_current_path {
 }
 DIR=$(get_current_path)
 
-if [ -f "$DIR/unipickerrc" ]; then
+if [ "$UNIPICKER_COMMAND" != "" ]; then
+    COMMAND="$UNIPICKER_COMMAND"
+elif [ -f "$DIR/unipickerrc" ]; then
     source "$DIR/unipickerrc"
 else
     COMMAND="$DIR/fzf/bin/fzf"
