@@ -1,7 +1,17 @@
 # unipicker
 
-Searches unicode characters by description and copies selected one to
-clipboard.
+A CLI utility for searching unicode characeters by description and copying
+them to clipboard.
+
+# Screenshots
+
+Running with `fzf`:
+
+![Running with fzf](http://i.imgur.com/Q6bSd0S.png)
+
+Running with `rofi -dmenu`:
+
+![Running with rofi](http://i.imgur.com/q1eE3vA.png)
 
 # Dependencies
 
@@ -16,12 +26,12 @@ clipboard.
 # Installation
 
 ```bash
-# omit `--recursive` if you plan on using something else than fzf
+# omit `--recursive` if you plan to use something else than fzf
 # or already have fzf installed
 git clone --recursive https://github.com/jeremija/unipicker
 cd unipicker
 
-# install fzf (not necessary if you will use a different application.
+# install fzf (not necessary if you will use a different application)
 fzf/install
 
 unipicker
@@ -29,11 +39,19 @@ unipicker
 
 # Configuration
 
-To use a different application, for example `dmenu` or `rofi` create a new
-`unipickerrc` file:
+There are two ways of using different application for searching:
+
+Environment variable:
+
+```bash
+UNIPICKER_COMMAND="rofi -dmenu" unipicker
+```
+
+Unipickerrc file in project root:
 
 ```bash
 echo 'COMMAND="rofi -dmenu"' > unipickerrc
+unipicker
 ```
 
 # License
