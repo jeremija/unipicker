@@ -20,8 +20,8 @@ DIR=$(get_current_path)
 
 if [ "$UNIPICKER_COMMAND" != "" ]; then
     COMMAND="$UNIPICKER_COMMAND"
-elif [ -f "$DIR/unipickerrc" ]; then
-    source "$DIR/unipickerrc"
+elif [ -f "$HOME/.unipickerrc" ]; then
+    source "$HOME/.unipickerrc"
 else
     COMMAND="$DIR/fzf/bin/fzf"
 fi

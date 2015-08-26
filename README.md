@@ -47,10 +47,10 @@ Environment variable:
 UNIPICKER_COMMAND="rofi -dmenu" unipicker
 ```
 
-Unipickerrc file in project root:
+`.unipickerrc` file in `$HOME` folder:
 
 ```bash
-echo 'COMMAND="rofi -dmenu"' > unipickerrc
+echo 'COMMAND="rofi -dmenu"' > "$HOME/.unipickerrc"
 unipicker
 ```
 
