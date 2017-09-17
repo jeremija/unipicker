@@ -1,34 +1,52 @@
 #!/bin/bash
 
+SYMBOLSFILE="$PWD/symbols"
+SHOULD_COPY=false
 
-function get_current_path {
-    # copied from http://stackoverflow.com/a/246128/1095379
-    SOURCE="${BASH_SOURCE[0]}"
-
-    # resolve $SOURCE until the file is no longer a symlink
-    while [ -h "$SOURCE" ]; do
-        DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
-        SOURCE="$(readlink "$SOURCE")"
-
-        # if $SOURCE was a relative symlink, we need to resolve it relative to
-        # the path where the symlink file was located
-        [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
-    done
-    echo "$( cd -P "$( dirname "$SOURCE" )" && pwd )"
-}
-DIR=$(get_current_path)
-
-if [ "$UNIPICKER_COMMAND" != "" ]; then
-    COMMAND="$UNIPICKER_COMMAND"
-elif [ -f "$HOME/.unipickerrc" ]; then
+if [ -f "$HOME/.unipickerrc" ]; then
     source "$HOME/.unipickerrc"
-else
-    COMMAND="$DIR/fzf/bin/fzf"
 fi
 
-letter=$(cat "$DIR/symbols" | eval $COMMAND | sed -r 's/(.)(.*)/\1/g')
+if [ "$UNIPICKER_SELECT_COMMAND" != "" ]; then
+    SELECT_COMMAND="$UNIPICKER_SELECT_COMMAND"
+elif [ "$SELECT_COMMAND" = "" ]; then
+    SELECT_COMMAND="fzf"
+fi
+
+if [ "$UNIPICKER_COPY_COMMAND" != "" ]; then
+    COPY_COMMAND="$UNIPICKER_COPY_COMMAND"
+elif [ "$COPY_COMMAND" = "" ];then 
+    # TODO Darwin / macOS command
+    COPY_COMMAND="xclip -selection clipboard"
+fi
+
+usage () {
+  echo "Select unicode character by description"
+  echo ""
+  echo "Usage: unipicker [--copy]"
+  echo ""
+  echo "Options:"
+  echo "    --copy   Copy to clipboard"
+  echo ""
+  echo "Variables:"
+  echo ""
+  echo "  UNIPICKER_SELECT_COMMAND Command to use for selecting (= '$SELECT_COMMAND')"
+  echo "  UNIPICKER_COPY_COMMAND Command to use for copying (= '$COPY_COMMAND')"
+}
+
+while [ -n "$1" ];do
+    case "$1" in
+        --copy) SHOULD_COPY=true ;;
+        -h|--help) usage; exit ;;
+    esac
+    shift
+done
+
+letter=$(cat "$SYMBOLSFILE" | eval $SELECT_COMMAND | sed -r 's/(.)(.*)/\1/g')
 
 if [ $? -eq 0 ]; then
-    echo $letter
-    echo -n $letter | xclip -selection clipboard
+    echo "$letter"
+    if [ "$SHOULD_COPY" = true ];then
+        echo -n "$letter" | $COPY_COMMAND
+    fi
 fi
