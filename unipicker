@@ -23,20 +23,22 @@ fi
 usage () {
   echo "Select unicode character by description"
   echo ""
-  echo "Usage: unipicker [--copy]"
+  echo "Usage: unipicker [--copy] [--list]"
   echo ""
   echo "Options:"
   echo "    --copy   Copy to clipboard"
+  echo "    --list   Only list the symbols, do not select or copy"
   echo ""
   echo "Variables:"
   echo ""
   echo "  UNIPICKER_SELECT_COMMAND Command to use for selecting (= '$SELECT_COMMAND')"
-  echo "  UNIPICKER_COPY_COMMAND Command to use for copying (= '$COPY_COMMAND')"
+  echo "  UNIPICKER_COPY_COMMAND   Command to use for copying (= '$COPY_COMMAND')"
 }
 
 while [ -n "$1" ];do
     case "$1" in
         --copy) SHOULD_COPY=true ;;
+        --list) cat "$SYMBOLSFILE"; exit ;;
         -h|--help) usage; exit ;;
     esac
     shift

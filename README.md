@@ -54,15 +54,16 @@ make install PREFIX=$HOME/.local
 ```sh
 Select unicode character by description
 
-Usage: unipicker [--copy]
+Usage: unipicker [--copy] [--list]
 
 Options:
     --copy   Copy to clipboard
+    --list   Only list the symbols, do not select or copy
 
 Variables:
 
   UNIPICKER_SELECT_COMMAND Command to use for selecting (= 'fzf')
-  UNIPICKER_COPY_COMMAND Command to use for copying (= 'xclip -selection clipboard')
+  UNIPICKER_COPY_COMMAND   Command to use for copying (= 'xclip -selection clipboard')
 ```
 
 <!-- END-EVAL -->
