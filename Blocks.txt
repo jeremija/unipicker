@@ -186,12 +186,12 @@
 # F900..FAFF; CJK Compatibility Ideographs
 # FB00..FB4F; Alphabetic Presentation Forms
 # FB50..FDFF; Arabic Presentation Forms-A
-FE00..FE0F; Variation Selectors
-FE10..FE1F; Vertical Forms
-FE20..FE2F; Combining Half Marks
-FE30..FE4F; CJK Compatibility Forms
+# FE00..FE0F; Variation Selectors
+# FE10..FE1F; Vertical Forms
+# FE20..FE2F; Combining Half Marks
+# FE30..FE4F; CJK Compatibility Forms
 FE50..FE6F; Small Form Variants
-FE70..FEFF; Arabic Presentation Forms-B
+# FE70..FEFF; Arabic Presentation Forms-B
 FF00..FFEF; Halfwidth and Fullwidth Forms
 FFF0..FFFF; Specials
 # 10000..1007F; Linear B Syllabary
