@@ -1,54 +1,77 @@
 #!/bin/bash
+set -e
 
-SYMBOLSFILE="$PWD/symbols"
-SHOULD_COPY=false
+should_copy=false
+
+if [ -f /etc/unipickerrc ]; then
+  source /etc/unipickerrc
+fi
 
 if [ -f "$HOME/.unipickerrc" ]; then
-    source "$HOME/.unipickerrc"
+  source "$HOME/.unipickerrc"
 fi
 
-if [ "$UNIPICKER_SELECT_COMMAND" != "" ]; then
-    SELECT_COMMAND="$UNIPICKER_SELECT_COMMAND"
-elif [ "$SELECT_COMMAND" = "" ]; then
-    SELECT_COMMAND="fzf"
-fi
+case "$OSTYPE" in
+  darwin*) os_copy_command="pbcopy";;
+  linux*)  os_copy_command="xclip -selection clipboard";;
+  *)       os_copy_command="xclip -selection clipboard";;
+esac
 
-if [ "$UNIPICKER_COPY_COMMAND" != "" ]; then
-    COPY_COMMAND="$UNIPICKER_COPY_COMMAND"
-elif [ "$COPY_COMMAND" = "" ];then 
-    # TODO Darwin / macOS command
-    COPY_COMMAND="xclip -selection clipboard"
-fi
+symbols_file="${UNIPICKER_SYMBOLS_FILE:-${PWD}/symbols}"
+select_command=${UNIPICKER_SELECT_COMMAND:-fzf}
+copy_command=${UNIPICKER_COPY_COMMAND:-${os_copy_command}}
 
 usage () {
   echo "Select unicode character by description"
   echo ""
-  echo "Usage: unipicker [--copy] [--list]"
+  echo "Usage: unipicker [--command cmd] [--copy-command cmd ] [--copy] [--list]"
   echo ""
-  echo "Options:"
-  echo "    --copy   Copy to clipboard"
-  echo "    --list   Only list the symbols, do not select or copy"
+  echo "Arguments:"
+  echo "  --command       Overrides default select command"
+  echo "  --copy-command  Override copy to clipboard command, implies --copy"
+  echo "  --copy          Copy to clipboard"
+  echo "  --list          Only list the symbols, do not select or copy"
   echo ""
   echo "Variables:"
   echo ""
-  echo "  UNIPICKER_SELECT_COMMAND Command to use for selecting (= '$SELECT_COMMAND')"
-  echo "  UNIPICKER_COPY_COMMAND   Command to use for copying (= '$COPY_COMMAND')"
+  echo "  UNIPICKER_SELECT_COMMAND  Command to use for selecting (= $select_command)"
+  echo "  UNIPICKER_COPY_COMMAND    Command to use for copying (= $copy_command)"
+  echo "  UNIPICKER_SYMBOLS_FILE    Location of symbols (= $symbols_file)"
 }
 
 while [ -n "$1" ];do
-    case "$1" in
-        --copy) SHOULD_COPY=true ;;
-        --list) cat "$SYMBOLSFILE"; exit ;;
-        -h|--help) usage; exit ;;
-    esac
-    shift
+  case "$1" in
+    --command)
+      select_command=$2
+      shift
+      ;;
+    --copy)
+      should_copy=true;;
+    --copy-command)
+      copy_command=$2
+      should_copy=true
+      shift
+      ;;
+    --symbols)
+      symbols_file=$2
+      shift
+      ;;
+    --list)
+      cat "$symbols_file"
+      exit;;
+    -h|--help)
+      usage
+      exit;;
+    *)
+      echo "Invalid argument: $1"
+      exit 1;;
+  esac
+  shift
 done
 
-letter=$(cat "$SYMBOLSFILE" | eval $SELECT_COMMAND | sed -r 's/(.)(.*)/\1/g')
+letter=$(cat "$symbols_file" | eval $select_command | sed -E 's/^(.).*/\1/g')
 
-if [ $? -eq 0 ]; then
-    echo "$letter"
-    if [ "$SHOULD_COPY" = true ];then
-        echo -n "$letter" | $COPY_COMMAND
-    fi
+echo "$letter"
+if [ "$should_copy" = true ];then
+  echo -n "$letter" | $copy_command
 fi

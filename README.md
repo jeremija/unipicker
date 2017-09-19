@@ -29,12 +29,14 @@ Running with `rofi -dmenu`:
 
 You need a selector command, default is [fzf](https://github.com/junegunn/fzf/)
 
-To copy to clipboard you need [xclip](http://linux.die.net/man/1/xclip)
+To copy to clipboard on Linux you need [xclip](http://linux.die.net/man/1/xclip)
 
 xclip can be installed in various linux distros:
 
 - Ubuntu/Debian: `apt-get install xclip`
 - Arch Linux: `pacman -S xclip`
+
+The `pbcopy` utility will be used on a Mac, which is installed by default.
 
 ## Installation
 
@@ -54,40 +56,47 @@ make install PREFIX=$HOME/.local
 ```sh
 Select unicode character by description
 
-Usage: unipicker [--copy] [--list]
+Usage: unipicker [--command cmd] [--copy-command cmd ] [--copy] [--list]
 
-Options:
-    --copy   Copy to clipboard
-    --list   Only list the symbols, do not select or copy
+Arguments:
+  --command       Overrides default select command
+  --copy-command  Override copy to clipboard command, implies --copy
+  --copy          Copy to clipboard
+  --list          Only list the symbols, do not select or copy
 
 Variables:
 
-  UNIPICKER_SELECT_COMMAND Command to use for selecting (= 'fzf')
-  UNIPICKER_COPY_COMMAND   Command to use for copying (= 'xclip -selection clipboard')
+  UNIPICKER_SELECT_COMMAND  Command to use for selecting (= fzf)
+  UNIPICKER_COPY_COMMAND    Command to use for copying (= pbcopy)
+  UNIPICKER_SYMBOLS_FILE    Location of symbols (= /usr/local/share/unipicker/symbols)
 ```
-
 <!-- END-EVAL -->
 
 ## Configuration
 
-You can configure both the selector command and the copy command.
+You can configure both the selector command and the copy command. There are two
+main configuration files which are sourced by unipicker:
 
-To override the selector command, either set the `UNIPICKER_SELECT_COMMAND` globally or set the `SELECT_COMMAND` variable in `$HOME/.unipickerrc`.
+- `/etc/unipickerrc`
+- `${HOME}/.unipickerrc`
 
-To override the copy command, either set the `UNIPICKER_COPY_COMMAND` globally or set the `COPY_COMMAND` variable in `$HOME/.unipickerrc`.
+The default settings can be seen in the `unipickerrc` file. The default copy
+command will be determined based on the OS, but it can be overridden.
 
-### Example environment variable
+The command line arguments can be used to override the variables set.
+
+### Examples
+
+Using `rofi` instead of `fzf`:
 
 ```bash
-UNIPICKER_COMMAND="rofi -dmenu" unipicker
+unipicker --command "rofi -dmenu"
 ```
 
-### Examples unipickerrc
-
-`.unipickerrc` file in `$HOME` folder:
+Using a different clipboard command
 
 ```bash
-COPY_COMMAND="rofi -dmenu"
+unipicker --copy-command pbcopy
 ```
 
 ## License

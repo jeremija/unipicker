@@ -1,0 +1,8 @@
+# Command to use for selecting (e.g. fzf, rofi)
+UNIPICKER_SELECT_COMMAND=fzf
+
+# Command to use for copying to clipboard (e.g. pbcopy)
+UNIPICKER_COPY_COMMAND=
+
+# Where to load symbols file from
+UNIPICKER_SYMBOLS_FILE=/usr/local/share/unipicker/symbols
