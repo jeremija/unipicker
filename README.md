@@ -9,8 +9,7 @@ copying them to clipboard.
 * [Installation](#installation)
 * [Usage](#usage)
 * [Configuration](#configuration)
-	* [Example environment variable](#example-environment-variable)
-	* [Examples unipickerrc](#examples-unipickerrc)
+* [Examples](#examples)
 * [License](#license)
 
 <!-- END-MARKDOWN-TOC -->
@@ -85,7 +84,7 @@ command will be determined based on the OS, but it can be overridden.
 
 The command line arguments can be used to override the variables set.
 
-### Examples
+## Examples
 
 Using `rofi` instead of `fzf`:
 
