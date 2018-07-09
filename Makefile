@@ -1,4 +1,5 @@
-PREFIX = /usr/local
+DESTDIR = 
+PREFIX = $(DESTDIR)/usr/local
 UNICODE_VERSION = 10.0.0
 
 Blocks.txt:
@@ -11,4 +12,4 @@ install: symbols
 	install -m755 unipicker $(PREFIX)/bin/unipicker
 	install -d -m755 $(PREFIX)/share/unipicker
 	install -m644 symbols $(PREFIX)/share/unipicker/symbols
-	install -b -m644 unipickerrc /etc/unipickerrc
+	install -b -m644 unipickerrc $(DESTDIR)/etc/unipickerrc
