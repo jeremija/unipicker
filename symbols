@@ -1288,6 +1288,7 @@ z latin small letter z                                       	 Basic Latin
 ՝ armenian comma                                             	 Armenian
 ՞ armenian question mark                                     	 Armenian
 ՟ armenian abbreviation mark                                 	 Armenian
+ՠ armenian small letter turned ayb                           	 Armenian
 ա armenian small letter ayb                                  	 Armenian
 բ armenian small letter ben                                  	 Armenian
 գ armenian small letter gim                                  	 Armenian
@@ -1327,6 +1328,7 @@ z latin small letter z                                       	 Basic Latin
 օ armenian small letter oh                                   	 Armenian
 ֆ armenian small letter feh                                  	 Armenian
 և armenian small ligature ech yiwn                           	 Armenian
+ֈ armenian small letter yi with stroke                       	 Armenian
 ։ armenian full stop                                         	 Armenian
 ֊ armenian hyphen                                            	 Armenian
 ֍ right-facing armenian eternity sign                        	 Armenian
@@ -1892,6 +1894,11 @@ z latin small letter z                                       	 Basic Latin
 ᷳ combining latin small letter o with diaeresis              	 Combining Diacritical Marks Supplement
 ᷴ combining latin small letter u with diaeresis              	 Combining Diacritical Marks Supplement
 ᷵ combining up tack above                                    	 Combining Diacritical Marks Supplement
+᷶ combining kavyka above right                               	 Combining Diacritical Marks Supplement
+᷷ combining kavyka above left                                	 Combining Diacritical Marks Supplement
+᷸ combining dot above left                                   	 Combining Diacritical Marks Supplement
+᷹ combining wide inverted bridge below                       	 Combining Diacritical Marks Supplement
+᷻ combining deletion mark                                    	 Combining Diacritical Marks Supplement
 ᷼ combining double inverted breve below                      	 Combining Diacritical Marks Supplement
 ᷽ combining almost equal to below                            	 Combining Diacritical Marks Supplement
 ᷾ combining left arrowhead above                             	 Combining Diacritical Marks Supplement
@@ -2566,6 +2573,7 @@ z latin small letter z                                       	 Basic Latin
 ₼ manat sign                                                 	 Currency Symbols
 ₽ ruble sign                                                 	 Currency Symbols
 ₾ lari sign                                                  	 Currency Symbols
+₿ bitcoin sign                                               	 Currency Symbols
 ⃐ combining left harpoon above                               	 Combining Diacritical Marks for Symbols
 ⃑ combining right harpoon above                              	 Combining Diacritical Marks for Symbols
 ⃒ combining long vertical line overlay                       	 Combining Diacritical Marks for Symbols
@@ -3355,6 +3363,10 @@ z latin small letter z                                       	 Basic Latin
 ⏸ double vertical bar                                        	 Miscellaneous Technical
 ⏹ black square for stop                                      	 Miscellaneous Technical
 ⏺ black circle for record                                    	 Miscellaneous Technical
+⏻ power symbol                                               	 Miscellaneous Technical
+⏼ power on-off symbol                                        	 Miscellaneous Technical
+⏽ power on symbol                                            	 Miscellaneous Technical
+⏾ power sleep symbol                                         	 Miscellaneous Technical
 ␀ symbol for null                                            	 Control Pictures
 ␁ symbol for start of heading                                	 Control Pictures
 ␂ symbol for start of text                                   	 Control Pictures
@@ -5271,6 +5283,9 @@ z latin small letter z                                       	 Basic Latin
 ⮷ ribbon arrow right down                                    	 Miscellaneous Symbols and Arrows
 ⮸ upwards white arrow from bar with horizontal bar           	 Miscellaneous Symbols and Arrows
 ⮹ up arrowhead in a rectangle box                            	 Miscellaneous Symbols and Arrows
+⮺ overlapping white squares                                  	 Miscellaneous Symbols and Arrows
+⮻ overlapping white and black squares                        	 Miscellaneous Symbols and Arrows
+⮼ overlapping black squares                                  	 Miscellaneous Symbols and Arrows
 ⮽ ballot box with light x                                    	 Miscellaneous Symbols and Arrows
 ⮾ circled x                                                  	 Miscellaneous Symbols and Arrows
 ⮿ circled bold x                                             	 Miscellaneous Symbols and Arrows
@@ -5283,6 +5298,7 @@ z latin small letter z                                       	 Basic Latin
 ⯆ black medium down-pointing triangle centred                	 Miscellaneous Symbols and Arrows
 ⯇ black medium left-pointing triangle centred                	 Miscellaneous Symbols and Arrows
 ⯈ black medium right-pointing triangle centred               	 Miscellaneous Symbols and Arrows
+⯉ neptune form two                                           	 Miscellaneous Symbols and Arrows
 ⯊ top half black circle                                      	 Miscellaneous Symbols and Arrows
 ⯋ bottom half black circle                                   	 Miscellaneous Symbols and Arrows
 ⯌ light four pointed black cusp                              	 Miscellaneous Symbols and Arrows
@@ -5291,10 +5307,51 @@ z latin small letter z                                       	 Basic Latin
 ⯏ rotated white four pointed cusp                            	 Miscellaneous Symbols and Arrows
 ⯐ square position indicator                                  	 Miscellaneous Symbols and Arrows
 ⯑ uncertainty sign                                           	 Miscellaneous Symbols and Arrows
+⯒ group mark                                                 	 Miscellaneous Symbols and Arrows
+⯓ pluto form two                                             	 Miscellaneous Symbols and Arrows
+⯔ pluto form three                                           	 Miscellaneous Symbols and Arrows
+⯕ pluto form four                                            	 Miscellaneous Symbols and Arrows
+⯖ pluto form five                                            	 Miscellaneous Symbols and Arrows
+⯗ transpluto                                                 	 Miscellaneous Symbols and Arrows
+⯘ proserpina                                                 	 Miscellaneous Symbols and Arrows
+⯙ astraea                                                    	 Miscellaneous Symbols and Arrows
+⯚ hygiea                                                     	 Miscellaneous Symbols and Arrows
+⯛ pholus                                                     	 Miscellaneous Symbols and Arrows
+⯜ nessus                                                     	 Miscellaneous Symbols and Arrows
+⯝ white moon selena                                          	 Miscellaneous Symbols and Arrows
+⯞ black diamond on cross                                     	 Miscellaneous Symbols and Arrows
+⯟ true light moon arta                                       	 Miscellaneous Symbols and Arrows
+⯠ cupido                                                     	 Miscellaneous Symbols and Arrows
+⯡ hades                                                      	 Miscellaneous Symbols and Arrows
+⯢ zeus                                                       	 Miscellaneous Symbols and Arrows
+⯣ kronos                                                     	 Miscellaneous Symbols and Arrows
+⯤ apollon                                                    	 Miscellaneous Symbols and Arrows
+⯥ admetos                                                    	 Miscellaneous Symbols and Arrows
+⯦ vulcanus                                                   	 Miscellaneous Symbols and Arrows
+⯧ poseidon                                                   	 Miscellaneous Symbols and Arrows
+⯨ left half black star                                       	 Miscellaneous Symbols and Arrows
+⯩ right half black star                                      	 Miscellaneous Symbols and Arrows
+⯪ star with left half black                                  	 Miscellaneous Symbols and Arrows
+⯫ star with right half black                                 	 Miscellaneous Symbols and Arrows
 ⯬ leftwards two-headed arrow with triangle arrowheads        	 Miscellaneous Symbols and Arrows
 ⯭ upwards two-headed arrow with triangle arrowheads          	 Miscellaneous Symbols and Arrows
 ⯮ rightwards two-headed arrow with triangle arrowheads       	 Miscellaneous Symbols and Arrows
 ⯯ downwards two-headed arrow with triangle arrowheads        	 Miscellaneous Symbols and Arrows
+⯰ eris form one                                              	 Miscellaneous Symbols and Arrows
+⯱ eris form two                                              	 Miscellaneous Symbols and Arrows
+⯲ sedna                                                      	 Miscellaneous Symbols and Arrows
+⯳ russian astrological symbol vigintile                      	 Miscellaneous Symbols and Arrows
+⯴ russian astrological symbol novile                         	 Miscellaneous Symbols and Arrows
+⯵ russian astrological symbol quintile                       	 Miscellaneous Symbols and Arrows
+⯶ russian astrological symbol binovile                       	 Miscellaneous Symbols and Arrows
+⯷ russian astrological symbol sentagon                       	 Miscellaneous Symbols and Arrows
+⯸ russian astrological symbol tredecile                      	 Miscellaneous Symbols and Arrows
+⯹ equals sign with infinity below                            	 Miscellaneous Symbols and Arrows
+⯺ united symbol                                              	 Miscellaneous Symbols and Arrows
+⯻ separated symbol                                           	 Miscellaneous Symbols and Arrows
+⯼ doubled symbol                                             	 Miscellaneous Symbols and Arrows
+⯽ passed symbol                                              	 Miscellaneous Symbols and Arrows
+⯾ reversed right angle                                       	 Miscellaneous Symbols and Arrows
 ﹐ small comma                                                	 Small Form Variants
 ﹑ small ideographic comma                                    	 Small Form Variants
 ﹒ small full stop                                            	 Small Form Variants
@@ -5861,6 +5918,7 @@ z latin small letter z                                       	 Basic Latin
 🄬 circled italic latin capital letter r                      	 Enclosed Alphanumeric Supplement
 🄭 circled cd                                                 	 Enclosed Alphanumeric Supplement
 🄮 circled wz                                                 	 Enclosed Alphanumeric Supplement
+🄯 copyleft symbol                                            	 Enclosed Alphanumeric Supplement
 🄰 squared latin capital letter a                             	 Enclosed Alphanumeric Supplement
 🄱 squared latin capital letter b                             	 Enclosed Alphanumeric Supplement
 🄲 squared latin capital letter c                             	 Enclosed Alphanumeric Supplement
@@ -5921,6 +5979,7 @@ z latin small letter z                                       	 Basic Latin
 🅩 negative circled latin capital letter z                    	 Enclosed Alphanumeric Supplement
 🅪 raised mc sign                                             	 Enclosed Alphanumeric Supplement
 🅫 raised md sign                                             	 Enclosed Alphanumeric Supplement
+🅬 raised mr sign                                             	 Enclosed Alphanumeric Supplement
 🅰 negative squared latin capital letter a                    	 Enclosed Alphanumeric Supplement
 🅱 negative squared latin capital letter b                    	 Enclosed Alphanumeric Supplement
 🅲 negative squared latin capital letter c                    	 Enclosed Alphanumeric Supplement
@@ -5964,6 +6023,24 @@ z latin small letter z                                       	 Basic Latin
 🆘 squared sos                                                	 Enclosed Alphanumeric Supplement
 🆙 squared up with exclamation mark                           	 Enclosed Alphanumeric Supplement
 🆚 squared vs                                                 	 Enclosed Alphanumeric Supplement
+🆛 squared three d                                            	 Enclosed Alphanumeric Supplement
+🆜 squared second screen                                      	 Enclosed Alphanumeric Supplement
+🆝 squared two k                                              	 Enclosed Alphanumeric Supplement
+🆞 squared four k                                             	 Enclosed Alphanumeric Supplement
+🆟 squared eight k                                            	 Enclosed Alphanumeric Supplement
+🆠 squared five point one                                     	 Enclosed Alphanumeric Supplement
+🆡 squared seven point one                                    	 Enclosed Alphanumeric Supplement
+🆢 squared twenty-two point two                               	 Enclosed Alphanumeric Supplement
+🆣 squared sixty p                                            	 Enclosed Alphanumeric Supplement
+🆤 squared one hundred twenty p                               	 Enclosed Alphanumeric Supplement
+🆥 squared latin small letter d                               	 Enclosed Alphanumeric Supplement
+🆦 squared hc                                                 	 Enclosed Alphanumeric Supplement
+🆧 squared hdr                                                	 Enclosed Alphanumeric Supplement
+🆨 squared hi-res                                             	 Enclosed Alphanumeric Supplement
+🆩 squared lossless                                           	 Enclosed Alphanumeric Supplement
+🆪 squared shv                                                	 Enclosed Alphanumeric Supplement
+🆫 squared uhd                                                	 Enclosed Alphanumeric Supplement
+🆬 squared vod                                                	 Enclosed Alphanumeric Supplement
 🇦 regional indicator symbol letter a                         	 Enclosed Alphanumeric Supplement
 🇧 regional indicator symbol letter b                         	 Enclosed Alphanumeric Supplement
 🇨 regional indicator symbol letter c                         	 Enclosed Alphanumeric Supplement
@@ -6035,6 +6112,7 @@ z latin small letter z                                       	 Basic Latin
 🈸 squared cjk unified ideograph-7533                         	 Enclosed Ideographic Supplement
 🈹 squared cjk unified ideograph-5272                         	 Enclosed Ideographic Supplement
 🈺 squared cjk unified ideograph-55b6                         	 Enclosed Ideographic Supplement
+🈻 squared cjk unified ideograph-914d                         	 Enclosed Ideographic Supplement
 🉀 tortoise shell bracketed cjk unified ideograph-672c        	 Enclosed Ideographic Supplement
 🉁 tortoise shell bracketed cjk unified ideograph-4e09        	 Enclosed Ideographic Supplement
 🉂 tortoise shell bracketed cjk unified ideograph-4e8c        	 Enclosed Ideographic Supplement
@@ -6046,6 +6124,12 @@ z latin small letter z                                       	 Basic Latin
 🉈 tortoise shell bracketed cjk unified ideograph-6557        	 Enclosed Ideographic Supplement
 🉐 circled ideograph advantage                                	 Enclosed Ideographic Supplement
 🉑 circled ideograph accept                                   	 Enclosed Ideographic Supplement
+🉠 rounded symbol for fu                                      	 Enclosed Ideographic Supplement
+🉡 rounded symbol for lu                                      	 Enclosed Ideographic Supplement
+🉢 rounded symbol for shou                                    	 Enclosed Ideographic Supplement
+🉣 rounded symbol for xi                                      	 Enclosed Ideographic Supplement
+🉤 rounded symbol for shuangxi                                	 Enclosed Ideographic Supplement
+🉥 rounded symbol for cai                                     	 Enclosed Ideographic Supplement
 🌀 cyclone                                                    	 Miscellaneous Symbols and Pictographs
 🌁 foggy                                                      	 Miscellaneous Symbols and Pictographs
 🌂 closed umbrella                                            	 Miscellaneous Symbols and Pictographs
@@ -6680,6 +6764,7 @@ z latin small letter z                                       	 Basic Latin
 🕷 spider                                                     	 Miscellaneous Symbols and Pictographs
 🕸 spider web                                                 	 Miscellaneous Symbols and Pictographs
 🕹 joystick                                                   	 Miscellaneous Symbols and Pictographs
+🕺 man dancing                                                	 Miscellaneous Symbols and Pictographs
 🕻 left hand telephone receiver                               	 Miscellaneous Symbols and Pictographs
 🕼 telephone receiver with page                               	 Miscellaneous Symbols and Pictographs
 🕽 right hand telephone receiver                              	 Miscellaneous Symbols and Pictographs
@@ -6721,6 +6806,7 @@ z latin small letter z                                       	 Basic Latin
 🖡 sideways black down pointing index                         	 Miscellaneous Symbols and Pictographs
 🖢 black up pointing backhand index                           	 Miscellaneous Symbols and Pictographs
 🖣 black down pointing backhand index                         	 Miscellaneous Symbols and Pictographs
+🖤 black heart                                                	 Miscellaneous Symbols and Pictographs
 🖥 desktop computer                                           	 Miscellaneous Symbols and Pictographs
 🖦 keyboard and mouse                                         	 Miscellaneous Symbols and Pictographs
 🖧 three networked computers                                  	 Miscellaneous Symbols and Pictographs
@@ -7018,6 +7104,11 @@ z latin small letter z                                       	 Basic Latin
 🛎 bellhop bell                                               	 Transport and Map Symbols
 🛏 bed                                                        	 Transport and Map Symbols
 🛐 place of worship                                           	 Transport and Map Symbols
+🛑 octagonal sign                                             	 Transport and Map Symbols
+🛒 shopping trolley                                           	 Transport and Map Symbols
+🛓 stupa                                                      	 Transport and Map Symbols
+🛔 pagoda                                                     	 Transport and Map Symbols
+🛕 hindu temple                                               	 Transport and Map Symbols
 🛠 hammer and wrench                                          	 Transport and Map Symbols
 🛡 shield                                                     	 Transport and Map Symbols
 🛢 oil drum                                                   	 Transport and Map Symbols
@@ -7035,6 +7126,13 @@ z latin small letter z                                       	 Basic Latin
 🛱 oncoming fire engine                                       	 Transport and Map Symbols
 🛲 diesel locomotive                                          	 Transport and Map Symbols
 🛳 passenger ship                                             	 Transport and Map Symbols
+🛴 scooter                                                    	 Transport and Map Symbols
+🛵 motor scooter                                              	 Transport and Map Symbols
+🛶 canoe                                                      	 Transport and Map Symbols
+🛷 sled                                                       	 Transport and Map Symbols
+🛸 flying saucer                                              	 Transport and Map Symbols
+🛹 skateboard                                                 	 Transport and Map Symbols
+🛺 auto rickshaw                                              	 Transport and Map Symbols
 🜀 alchemical symbol for quintessence                         	 Alchemical Symbols
 🜁 alchemical symbol for air                                  	 Alchemical Symbols
 🜂 alchemical symbol for fire                                 	 Alchemical Symbols
@@ -7236,6 +7334,22 @@ z latin small letter z                                       	 Basic Latin
 🟒 light twelve pointed black star                            	 Geometric Shapes Extended
 🟓 heavy twelve pointed black star                            	 Geometric Shapes Extended
 🟔 heavy twelve pointed pinwheel star                         	 Geometric Shapes Extended
+🟕 circled triangle                                           	 Geometric Shapes Extended
+🟖 negative circled triangle                                  	 Geometric Shapes Extended
+🟗 circled square                                             	 Geometric Shapes Extended
+🟘 negative circled square                                    	 Geometric Shapes Extended
+🟠 large orange circle                                        	 Geometric Shapes Extended
+🟡 large yellow circle                                        	 Geometric Shapes Extended
+🟢 large green circle                                         	 Geometric Shapes Extended
+🟣 large purple circle                                        	 Geometric Shapes Extended
+🟤 large brown circle                                         	 Geometric Shapes Extended
+🟥 large red square                                           	 Geometric Shapes Extended
+🟦 large blue square                                          	 Geometric Shapes Extended
+🟧 large orange square                                        	 Geometric Shapes Extended
+🟨 large yellow square                                        	 Geometric Shapes Extended
+🟩 large green square                                         	 Geometric Shapes Extended
+🟪 large purple square                                        	 Geometric Shapes Extended
+🟫 large brown square                                         	 Geometric Shapes Extended
 🠀 leftwards arrow with small triangle arrowhead              	 Supplemental Arrows-C
 🠁 upwards arrow with small triangle arrowhead                	 Supplemental Arrows-C
 🠂 rightwards arrow with small triangle arrowhead             	 Supplemental Arrows-C
@@ -7384,6 +7498,21 @@ z latin small letter z                                       	 Basic Latin
 🢫 rightwards front-tilted shadowed white arrow               	 Supplemental Arrows-C
 🢬 white arrow shaft width one                                	 Supplemental Arrows-C
 🢭 white arrow shaft width two thirds                         	 Supplemental Arrows-C
+🤀 circled cross formee with four dots                        	 Supplemental Symbols and Pictographs
+🤁 circled cross formee with two dots                         	 Supplemental Symbols and Pictographs
+🤂 circled cross formee                                       	 Supplemental Symbols and Pictographs
+🤃 left half circle with four dots                            	 Supplemental Symbols and Pictographs
+🤄 left half circle with three dots                           	 Supplemental Symbols and Pictographs
+🤅 left half circle with two dots                             	 Supplemental Symbols and Pictographs
+🤆 left half circle with dot                                  	 Supplemental Symbols and Pictographs
+🤇 left half circle                                           	 Supplemental Symbols and Pictographs
+🤈 downward facing hook                                       	 Supplemental Symbols and Pictographs
+🤉 downward facing notched hook                               	 Supplemental Symbols and Pictographs
+🤊 downward facing hook with dot                              	 Supplemental Symbols and Pictographs
+🤋 downward facing notched hook with dot                      	 Supplemental Symbols and Pictographs
+🤍 white heart                                                	 Supplemental Symbols and Pictographs
+🤎 brown heart                                                	 Supplemental Symbols and Pictographs
+🤏 pinching hand                                              	 Supplemental Symbols and Pictographs
 🤐 zipper-mouth face                                          	 Supplemental Symbols and Pictographs
 🤑 money-mouth face                                           	 Supplemental Symbols and Pictographs
 🤒 face with thermometer                                      	 Supplemental Symbols and Pictographs
@@ -7393,9 +7522,222 @@ z latin small letter z                                       	 Basic Latin
 🤖 robot face                                                 	 Supplemental Symbols and Pictographs
 🤗 hugging face                                               	 Supplemental Symbols and Pictographs
 🤘 sign of the horns                                          	 Supplemental Symbols and Pictographs
+🤙 call me hand                                               	 Supplemental Symbols and Pictographs
+🤚 raised back of hand                                        	 Supplemental Symbols and Pictographs
+🤛 left-facing fist                                           	 Supplemental Symbols and Pictographs
+🤜 right-facing fist                                          	 Supplemental Symbols and Pictographs
+🤝 handshake                                                  	 Supplemental Symbols and Pictographs
+🤞 hand with index and middle fingers crossed                 	 Supplemental Symbols and Pictographs
+🤟 i love you hand sign                                       	 Supplemental Symbols and Pictographs
+🤠 face with cowboy hat                                       	 Supplemental Symbols and Pictographs
+🤡 clown face                                                 	 Supplemental Symbols and Pictographs
+🤢 nauseated face                                             	 Supplemental Symbols and Pictographs
+🤣 rolling on the floor laughing                              	 Supplemental Symbols and Pictographs
+🤤 drooling face                                              	 Supplemental Symbols and Pictographs
+🤥 lying face                                                 	 Supplemental Symbols and Pictographs
+🤦 face palm                                                  	 Supplemental Symbols and Pictographs
+🤧 sneezing face                                              	 Supplemental Symbols and Pictographs
+🤨 face with one eyebrow raised                               	 Supplemental Symbols and Pictographs
+🤩 grinning face with star eyes                               	 Supplemental Symbols and Pictographs
+🤪 grinning face with one large and one small eye             	 Supplemental Symbols and Pictographs
+🤫 face with finger covering closed lips                      	 Supplemental Symbols and Pictographs
+🤬 serious face with symbols covering mouth                   	 Supplemental Symbols and Pictographs
+🤭 smiling face with smiling eyes and hand covering mouth     	 Supplemental Symbols and Pictographs
+🤮 face with open mouth vomiting                              	 Supplemental Symbols and Pictographs
+🤯 shocked face with exploding head                           	 Supplemental Symbols and Pictographs
+🤰 pregnant woman                                             	 Supplemental Symbols and Pictographs
+🤱 breast-feeding                                             	 Supplemental Symbols and Pictographs
+🤲 palms up together                                          	 Supplemental Symbols and Pictographs
+🤳 selfie                                                     	 Supplemental Symbols and Pictographs
+🤴 prince                                                     	 Supplemental Symbols and Pictographs
+🤵 man in tuxedo                                              	 Supplemental Symbols and Pictographs
+🤶 mother christmas                                           	 Supplemental Symbols and Pictographs
+🤷 shrug                                                      	 Supplemental Symbols and Pictographs
+🤸 person doing cartwheel                                     	 Supplemental Symbols and Pictographs
+🤹 juggling                                                   	 Supplemental Symbols and Pictographs
+🤺 fencer                                                     	 Supplemental Symbols and Pictographs
+🤻 modern pentathlon                                          	 Supplemental Symbols and Pictographs
+🤼 wrestlers                                                  	 Supplemental Symbols and Pictographs
+🤽 water polo                                                 	 Supplemental Symbols and Pictographs
+🤾 handball                                                   	 Supplemental Symbols and Pictographs
+🤿 diving mask                                                	 Supplemental Symbols and Pictographs
+🥀 wilted flower                                              	 Supplemental Symbols and Pictographs
+🥁 drum with drumsticks                                       	 Supplemental Symbols and Pictographs
+🥂 clinking glasses                                           	 Supplemental Symbols and Pictographs
+🥃 tumbler glass                                              	 Supplemental Symbols and Pictographs
+🥄 spoon                                                      	 Supplemental Symbols and Pictographs
+🥅 goal net                                                   	 Supplemental Symbols and Pictographs
+🥆 rifle                                                      	 Supplemental Symbols and Pictographs
+🥇 first place medal                                          	 Supplemental Symbols and Pictographs
+🥈 second place medal                                         	 Supplemental Symbols and Pictographs
+🥉 third place medal                                          	 Supplemental Symbols and Pictographs
+🥊 boxing glove                                               	 Supplemental Symbols and Pictographs
+🥋 martial arts uniform                                       	 Supplemental Symbols and Pictographs
+🥌 curling stone                                              	 Supplemental Symbols and Pictographs
+🥍 lacrosse stick and ball                                    	 Supplemental Symbols and Pictographs
+🥎 softball                                                   	 Supplemental Symbols and Pictographs
+🥏 flying disc                                                	 Supplemental Symbols and Pictographs
+🥐 croissant                                                  	 Supplemental Symbols and Pictographs
+🥑 avocado                                                    	 Supplemental Symbols and Pictographs
+🥒 cucumber                                                   	 Supplemental Symbols and Pictographs
+🥓 bacon                                                      	 Supplemental Symbols and Pictographs
+🥔 potato                                                     	 Supplemental Symbols and Pictographs
+🥕 carrot                                                     	 Supplemental Symbols and Pictographs
+🥖 baguette bread                                             	 Supplemental Symbols and Pictographs
+🥗 green salad                                                	 Supplemental Symbols and Pictographs
+🥘 shallow pan of food                                        	 Supplemental Symbols and Pictographs
+🥙 stuffed flatbread                                          	 Supplemental Symbols and Pictographs
+🥚 egg                                                        	 Supplemental Symbols and Pictographs
+🥛 glass of milk                                              	 Supplemental Symbols and Pictographs
+🥜 peanuts                                                    	 Supplemental Symbols and Pictographs
+🥝 kiwifruit                                                  	 Supplemental Symbols and Pictographs
+🥞 pancakes                                                   	 Supplemental Symbols and Pictographs
+🥟 dumpling                                                   	 Supplemental Symbols and Pictographs
+🥠 fortune cookie                                             	 Supplemental Symbols and Pictographs
+🥡 takeout box                                                	 Supplemental Symbols and Pictographs
+🥢 chopsticks                                                 	 Supplemental Symbols and Pictographs
+🥣 bowl with spoon                                            	 Supplemental Symbols and Pictographs
+🥤 cup with straw                                             	 Supplemental Symbols and Pictographs
+🥥 coconut                                                    	 Supplemental Symbols and Pictographs
+🥦 broccoli                                                   	 Supplemental Symbols and Pictographs
+🥧 pie                                                        	 Supplemental Symbols and Pictographs
+🥨 pretzel                                                    	 Supplemental Symbols and Pictographs
+🥩 cut of meat                                                	 Supplemental Symbols and Pictographs
+🥪 sandwich                                                   	 Supplemental Symbols and Pictographs
+🥫 canned food                                                	 Supplemental Symbols and Pictographs
+🥬 leafy green                                                	 Supplemental Symbols and Pictographs
+🥭 mango                                                      	 Supplemental Symbols and Pictographs
+🥮 moon cake                                                  	 Supplemental Symbols and Pictographs
+🥯 bagel                                                      	 Supplemental Symbols and Pictographs
+🥰 smiling face with smiling eyes and three hearts            	 Supplemental Symbols and Pictographs
+🥱 yawning face                                               	 Supplemental Symbols and Pictographs
+🥳 face with party horn and party hat                         	 Supplemental Symbols and Pictographs
+🥴 face with uneven eyes and wavy mouth                       	 Supplemental Symbols and Pictographs
+🥵 overheated face                                            	 Supplemental Symbols and Pictographs
+🥶 freezing face                                              	 Supplemental Symbols and Pictographs
+🥺 face with pleading eyes                                    	 Supplemental Symbols and Pictographs
+🥻 sari                                                       	 Supplemental Symbols and Pictographs
+🥼 lab coat                                                   	 Supplemental Symbols and Pictographs
+🥽 goggles                                                    	 Supplemental Symbols and Pictographs
+🥾 hiking boot                                                	 Supplemental Symbols and Pictographs
+🥿 flat shoe                                                  	 Supplemental Symbols and Pictographs
 🦀 crab                                                       	 Supplemental Symbols and Pictographs
 🦁 lion face                                                  	 Supplemental Symbols and Pictographs
 🦂 scorpion                                                   	 Supplemental Symbols and Pictographs
 🦃 turkey                                                     	 Supplemental Symbols and Pictographs
 🦄 unicorn face                                               	 Supplemental Symbols and Pictographs
+🦅 eagle                                                      	 Supplemental Symbols and Pictographs
+🦆 duck                                                       	 Supplemental Symbols and Pictographs
+🦇 bat                                                        	 Supplemental Symbols and Pictographs
+🦈 shark                                                      	 Supplemental Symbols and Pictographs
+🦉 owl                                                        	 Supplemental Symbols and Pictographs
+🦊 fox face                                                   	 Supplemental Symbols and Pictographs
+🦋 butterfly                                                  	 Supplemental Symbols and Pictographs
+🦌 deer                                                       	 Supplemental Symbols and Pictographs
+🦍 gorilla                                                    	 Supplemental Symbols and Pictographs
+🦎 lizard                                                     	 Supplemental Symbols and Pictographs
+🦏 rhinoceros                                                 	 Supplemental Symbols and Pictographs
+🦐 shrimp                                                     	 Supplemental Symbols and Pictographs
+🦑 squid                                                      	 Supplemental Symbols and Pictographs
+🦒 giraffe face                                               	 Supplemental Symbols and Pictographs
+🦓 zebra face                                                 	 Supplemental Symbols and Pictographs
+🦔 hedgehog                                                   	 Supplemental Symbols and Pictographs
+🦕 sauropod                                                   	 Supplemental Symbols and Pictographs
+🦖 t-rex                                                      	 Supplemental Symbols and Pictographs
+🦗 cricket                                                    	 Supplemental Symbols and Pictographs
+🦘 kangaroo                                                   	 Supplemental Symbols and Pictographs
+🦙 llama                                                      	 Supplemental Symbols and Pictographs
+🦚 peacock                                                    	 Supplemental Symbols and Pictographs
+🦛 hippopotamus                                               	 Supplemental Symbols and Pictographs
+🦜 parrot                                                     	 Supplemental Symbols and Pictographs
+🦝 raccoon                                                    	 Supplemental Symbols and Pictographs
+🦞 lobster                                                    	 Supplemental Symbols and Pictographs
+🦟 mosquito                                                   	 Supplemental Symbols and Pictographs
+🦠 microbe                                                    	 Supplemental Symbols and Pictographs
+🦡 badger                                                     	 Supplemental Symbols and Pictographs
+🦢 swan                                                       	 Supplemental Symbols and Pictographs
+🦥 sloth                                                      	 Supplemental Symbols and Pictographs
+🦦 otter                                                      	 Supplemental Symbols and Pictographs
+🦧 orangutan                                                  	 Supplemental Symbols and Pictographs
+🦨 skunk                                                      	 Supplemental Symbols and Pictographs
+🦩 flamingo                                                   	 Supplemental Symbols and Pictographs
+🦪 oyster                                                     	 Supplemental Symbols and Pictographs
+🦮 guide dog                                                  	 Supplemental Symbols and Pictographs
+🦯 probing cane                                               	 Supplemental Symbols and Pictographs
+🦰 emoji component red hair                                   	 Supplemental Symbols and Pictographs
+🦱 emoji component curly hair                                 	 Supplemental Symbols and Pictographs
+🦲 emoji component bald                                       	 Supplemental Symbols and Pictographs
+🦳 emoji component white hair                                 	 Supplemental Symbols and Pictographs
+🦴 bone                                                       	 Supplemental Symbols and Pictographs
+🦵 leg                                                        	 Supplemental Symbols and Pictographs
+🦶 foot                                                       	 Supplemental Symbols and Pictographs
+🦷 tooth                                                      	 Supplemental Symbols and Pictographs
+🦸 superhero                                                  	 Supplemental Symbols and Pictographs
+🦹 supervillain                                               	 Supplemental Symbols and Pictographs
+🦺 safety vest                                                	 Supplemental Symbols and Pictographs
+🦻 ear with hearing aid                                       	 Supplemental Symbols and Pictographs
+🦼 motorized wheelchair                                       	 Supplemental Symbols and Pictographs
+🦽 manual wheelchair                                          	 Supplemental Symbols and Pictographs
+🦾 mechanical arm                                             	 Supplemental Symbols and Pictographs
+🦿 mechanical leg                                             	 Supplemental Symbols and Pictographs
 🧀 cheese wedge                                               	 Supplemental Symbols and Pictographs
+🧁 cupcake                                                    	 Supplemental Symbols and Pictographs
+🧂 salt shaker                                                	 Supplemental Symbols and Pictographs
+🧃 beverage box                                               	 Supplemental Symbols and Pictographs
+🧄 garlic                                                     	 Supplemental Symbols and Pictographs
+🧅 onion                                                      	 Supplemental Symbols and Pictographs
+🧆 falafel                                                    	 Supplemental Symbols and Pictographs
+🧇 waffle                                                     	 Supplemental Symbols and Pictographs
+🧈 butter                                                     	 Supplemental Symbols and Pictographs
+🧉 mate drink                                                 	 Supplemental Symbols and Pictographs
+🧊 ice cube                                                   	 Supplemental Symbols and Pictographs
+🧍 standing person                                            	 Supplemental Symbols and Pictographs
+🧎 kneeling person                                            	 Supplemental Symbols and Pictographs
+🧏 deaf person                                                	 Supplemental Symbols and Pictographs
+🧐 face with monocle                                          	 Supplemental Symbols and Pictographs
+🧑 adult                                                      	 Supplemental Symbols and Pictographs
+🧒 child                                                      	 Supplemental Symbols and Pictographs
+🧓 older adult                                                	 Supplemental Symbols and Pictographs
+🧔 bearded person                                             	 Supplemental Symbols and Pictographs
+🧕 person with headscarf                                      	 Supplemental Symbols and Pictographs
+🧖 person in steamy room                                      	 Supplemental Symbols and Pictographs
+🧗 person climbing                                            	 Supplemental Symbols and Pictographs
+🧘 person in lotus position                                   	 Supplemental Symbols and Pictographs
+🧙 mage                                                       	 Supplemental Symbols and Pictographs
+🧚 fairy                                                      	 Supplemental Symbols and Pictographs
+🧛 vampire                                                    	 Supplemental Symbols and Pictographs
+🧜 merperson                                                  	 Supplemental Symbols and Pictographs
+🧝 elf                                                        	 Supplemental Symbols and Pictographs
+🧞 genie                                                      	 Supplemental Symbols and Pictographs
+🧟 zombie                                                     	 Supplemental Symbols and Pictographs
+🧠 brain                                                      	 Supplemental Symbols and Pictographs
+🧡 orange heart                                               	 Supplemental Symbols and Pictographs
+🧢 billed cap                                                 	 Supplemental Symbols and Pictographs
+🧣 scarf                                                      	 Supplemental Symbols and Pictographs
+🧤 gloves                                                     	 Supplemental Symbols and Pictographs
+🧥 coat                                                       	 Supplemental Symbols and Pictographs
+🧦 socks                                                      	 Supplemental Symbols and Pictographs
+🧧 red gift envelope                                          	 Supplemental Symbols and Pictographs
+🧨 firecracker                                                	 Supplemental Symbols and Pictographs
+🧩 jigsaw puzzle piece                                        	 Supplemental Symbols and Pictographs
+🧪 test tube                                                  	 Supplemental Symbols and Pictographs
+🧫 petri dish                                                 	 Supplemental Symbols and Pictographs
+🧬 dna double helix                                           	 Supplemental Symbols and Pictographs
+🧭 compass                                                    	 Supplemental Symbols and Pictographs
+🧮 abacus                                                     	 Supplemental Symbols and Pictographs
+🧯 fire extinguisher                                          	 Supplemental Symbols and Pictographs
+🧰 toolbox                                                    	 Supplemental Symbols and Pictographs
+🧱 brick                                                      	 Supplemental Symbols and Pictographs
+🧲 magnet                                                     	 Supplemental Symbols and Pictographs
+🧳 luggage                                                    	 Supplemental Symbols and Pictographs
+🧴 lotion bottle                                              	 Supplemental Symbols and Pictographs
+🧵 spool of thread                                            	 Supplemental Symbols and Pictographs
+🧶 ball of yarn                                               	 Supplemental Symbols and Pictographs
+🧷 safety pin                                                 	 Supplemental Symbols and Pictographs
+🧸 teddy bear                                                 	 Supplemental Symbols and Pictographs
+🧹 broom                                                      	 Supplemental Symbols and Pictographs
+🧺 basket                                                     	 Supplemental Symbols and Pictographs
+🧻 roll of paper                                              	 Supplemental Symbols and Pictographs
+🧼 bar of soap                                                	 Supplemental Symbols and Pictographs
+🧽 sponge                                                     	 Supplemental Symbols and Pictographs
+🧾 receipt                                                    	 Supplemental Symbols and Pictographs
