@@ -15,6 +15,10 @@ for rng in ranges:
         try:
             character = chr(i)
             name = unicodedata.name(character)
-            print((character + " " + name.lower()).ljust(60, " "), rng[2])
+            print(
+                (character + " " + name.lower()).ljust(60, " "),
+                hex(i)[2:].upper().rjust(6, " "),
+                rng[2],
+            )
         except:
             continue

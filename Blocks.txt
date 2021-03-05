@@ -184,7 +184,7 @@ AB30..AB6F; Latin Extended-E
 # DC00..DFFF; Low Surrogates
 # E000..F8FF; Private Use Area
 # F900..FAFF; CJK Compatibility Ideographs
-# FB00..FB4F; Alphabetic Presentation Forms
+FB00..FB4F; Alphabetic Presentation Forms
 FB50..FDFF; Arabic Presentation Forms-A
 # FE00..FE0F; Variation Selectors
 # FE10..FE1F; Vertical Forms
