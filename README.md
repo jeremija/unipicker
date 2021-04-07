@@ -1,6 +1,6 @@
 # unipicker
 
-A CLI utility for searching unicode characeters by description and optionally
+A CLI utility for searching unicode characters by description and optionally
 copying them to clipboard.
 
 <!-- BEGIN-MARKDOWN-TOC -->
@@ -34,6 +34,7 @@ xclip can be installed in various linux distros:
 
 - Ubuntu/Debian: `apt-get install xclip`
 - Arch Linux: `pacman -S xclip`
+- NixOS/Nix: `nix-env -iA nixpkgs.unipicker`
 
 The `pbcopy` utility will be used on a Mac, which is installed by default.
 
