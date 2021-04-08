@@ -34,7 +34,6 @@ xclip can be installed in various linux distros:
 
 - Ubuntu/Debian: `apt-get install xclip`
 - Arch Linux: `pacman -S xclip`
-- NixOS/Nix: `nix-env -iA nixpkgs.unipicker`
 
 The `pbcopy` utility will be used on a Mac, which is installed by default.
 
@@ -48,6 +47,11 @@ To install to your home directory instead of `/usr/local`:
 
 ```bash
 make install PREFIX=$HOME/.local
+```
+
+Alternatively, if you're using Nix:
+```bash
+nix-env -iA nixpkgs.unipicker
 ```
 
 ## Usage
