@@ -11,7 +11,7 @@ with open("Blocks.txt", "r") as f:
         ranges.append([int("0x" + start, 16), int("0x" + end, 16), desc.strip()])
 
 for rng in ranges:
-    for i in range(rng[0], rng[1]):
+    for i in range(rng[0], rng[1] + 1):
         try:
             character = chr(i)
             name = unicodedata.name(character)
