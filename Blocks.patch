@@ -33,7 +33,7 @@ index a4f851b..fd375bb 100644
  0B80..0BFF; Tamil
  0C00..0C7F; Telugu
  0C80..0CFF; Kannada
-@@ -66,36 +66,36 @@
+@@ -67,37 +67,37 @@
  0E00..0E7F; Thai
  0E80..0EFF; Lao
  0F00..0FFF; Tibetan
@@ -80,6 +80,7 @@ index a4f851b..fd375bb 100644
 -1C00..1C4F; Lepcha
 -1C50..1C7F; Ol Chiki
 -1C80..1C8F; Cyrillic Extended-C
+-1C90..1CBF; Georgian Extended
 -1CC0..1CCF; Sundanese Supplement
 +# 1B00..1B7F; Balinese
 +# 1B80..1BBF; Sundanese
@@ -87,6 +88,7 @@ index a4f851b..fd375bb 100644
 +# 1C00..1C4F; Lepcha
 +# 1C50..1C7F; Ol Chiki
 +# 1C80..1C8F; Cyrillic Extended-C
++# 1C90..1CBF; Georgian Extended
 +# 1CC0..1CCF; Sundanese Supplement
  1CD0..1CFF; Vedic Extensions
  1D00..1D7F; Phonetic Extensions
