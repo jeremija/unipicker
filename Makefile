@@ -2,6 +2,7 @@ DESTDIR =
 PREFIX = $(DESTDIR)/usr/local
 UNICODE_VERSION = 15.1.0
 
+all: symbols
 
 Blocks.txt:
 	wget -O$@ "http://ftp.unicode.org/Public/$(UNICODE_VERSION)/ucd/Blocks.txt"
@@ -20,3 +21,6 @@ install: symbols
 	install -m644 symbols $(PREFIX)/share/unipicker/symbols
 	install -d -m755 $(DESTDIR)/etc
 	install -b -m644 unipickerrc $(DESTDIR)/etc/unipickerrc
+
+clean:
+	rm -f Blocks.txt BlocksReduced.txt symbols
