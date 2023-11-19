@@ -1,6 +1,7 @@
 DESTDIR = 
 PREFIX = $(DESTDIR)/usr/local
-UNICODE_VERSION = 10.0.0
+UNICODE_VERSION = 15.1.0
+
 
 Blocks.txt:
 	wget -O$@ "http://ftp.unicode.org/Public/$(UNICODE_VERSION)/ucd/Blocks.txt"

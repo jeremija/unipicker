@@ -2,7 +2,7 @@ diff --git b/Blocks.txt a/Blocks.txt
 index a4f851b..fd375bb 100644
 --- b/Blocks.txt
 +++ a/Blocks.txt
-@@ -45,19 +45,19 @@
+@@ -45,20 +45,20 @@
  0530..058F; Armenian
  0590..05FF; Hebrew
  0600..06FF; Arabic
@@ -14,11 +14,13 @@ index a4f851b..fd375bb 100644
 -0800..083F; Samaritan
 -0840..085F; Mandaic
 -0860..086F; Syriac Supplement
+-08A0..08FF; Arabic Extended-B
 -08A0..08FF; Arabic Extended-A
 +# 07C0..07FF; NKo
 +# 0800..083F; Samaritan
 +# 0840..085F; Mandaic
 +# 0860..086F; Syriac Supplement
++# 08A0..08FF; Arabic Extended-B
 +# 08A0..08FF; Arabic Extended-A
  0900..097F; Devanagari
  0980..09FF; Bengali
@@ -89,7 +91,7 @@ index a4f851b..fd375bb 100644
  1CD0..1CFF; Vedic Extensions
  1D00..1D7F; Phonetic Extensions
  1D80..1DBF; Phonetic Extensions Supplement
-@@ -129,67 +129,67 @@
+@@ -131,67 +131,67 @@
  2C00..2C5F; Glagolitic
  2C60..2C7F; Latin Extended-C
  2C80..2CFF; Coptic
