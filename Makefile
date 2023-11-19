@@ -8,7 +8,7 @@ Blocks.txt:
 
 BlocksReduced.txt: Blocks.txt Blocks.patch
 	cp Blocks.txt $@
-	patch $@ -p1 < Blocks.patch
+	patch --merge $@ -p1 < Blocks.patch
 
 symbols: BlocksReduced.txt
 	./generate-symbols.py > "$@"
