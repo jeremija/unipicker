@@ -208,7 +208,7 @@ index a4f851b..fd375bb 100644
  FE50..FE6F; Small Form Variants
  FE70..FEFF; Arabic Presentation Forms-B
  FF00..FFEF; Halfwidth and Fullwidth Forms
-@@ -205,90 +205,90 @@ FFF0..FFFF; Specials
+@@ -205,101 +205,101 @@ FFF0..FFFF; Specials
  102E0..102FF; Coptic Epact Numbers
  10300..1032F; Old Italic
  10330..1034F; Gothic
@@ -223,13 +223,16 @@ index a4f851b..fd375bb 100644
 -104B0..104FF; Osage
 -10500..1052F; Elbasan
 -10530..1056F; Caucasian Albanian
+-10570..105BF; Vithkuqi
 +# 10400..1044F; Deseret
 +# 10450..1047F; Shavian
 +# 10480..104AF; Osmanya
 +# 104B0..104FF; Osage
 +# 10500..1052F; Elbasan
 +# 10530..1056F; Caucasian Albanian
++# 10570..105BF; Vithkuqi
  10600..1077F; Linear A
+ 10780..107BF; Latin Extended-F
 -10800..1083F; Cypriot Syllabary
 -10840..1085F; Imperial Aramaic
 +# 10800..1083F; Cypriot Syllabary
@@ -258,13 +261,22 @@ index a4f851b..fd375bb 100644
 -10B80..10BAF; Psalter Pahlavi
 -10C00..10C4F; Old Turkic
 -10C80..10CFF; Old Hungarian
+-10D00..10D3F; Hanifi Rohingya
 -10E60..10E7F; Rumi Numeral Symbols
 +# 10B40..10B5F; Inscriptional Parthian
 +# 10B60..10B7F; Inscriptional Pahlavi
 +# 10B80..10BAF; Psalter Pahlavi
 +# 10C00..10C4F; Old Turkic
 +# 10C80..10CFF; Old Hungarian
++# 10D00..10D3F; Hanifi Rohingya
 +# 10E60..10E7F; Rumi Numeral Symbols
+ 10E80..10EBF; Yezidi
+ 10EC0..10EFF; Arabic Extended-C
+ 10F00..10F2F; Old Sogdian
+ 10F30..10F6F; Sogdian
+ 10F70..10FAF; Old Uyghur
+ 10FB0..10FDF; Chorasmian
+ 10FE0..10FFF; Elymaic
  11000..1107F; Brahmi
 -11080..110CF; Kaithi
 -110D0..110FF; Sora Sompeng
@@ -282,7 +294,8 @@ index a4f851b..fd375bb 100644
 -11600..1165F; Modi
 -11660..1167F; Mongolian Supplement
 -11680..116CF; Takri
--11700..1173F; Ahom
+-11700..1174F; Ahom
+-11800..1184F; Dogra
 -118A0..118FF; Warang Citi
 -11A00..11A4F; Zanabazar Square
 -11A50..11AAF; Soyombo
@@ -306,7 +319,8 @@ index a4f851b..fd375bb 100644
 +# 11600..1165F; Modi
 +# 11660..1167F; Mongolian Supplement
 +# 11680..116CF; Takri
-+# 11700..1173F; Ahom
++# 11700..1174F; Ahom
++# 11800..1184F; Dogra
 +# 118A0..118FF; Warang Citi
 +# 11A00..11A4F; Zanabazar Square
 +# 11A50..11AAF; Soyombo
