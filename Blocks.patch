@@ -379,16 +379,22 @@ index a4f851b..fd375bb 100644
  1F000..1F02F; Mahjong Tiles
  1F030..1F09F; Domino Tiles
  1F0A0..1F0FF; Playing Cards
-@@ -302,15 +302,16 @@ FFF0..FFFF; Specials
+@@ -302,21 +302,22 @@ FFF0..FFFF; Specials
  1F780..1F7FF; Geometric Shapes Extended
  1F800..1F8FF; Supplemental Arrows-C
  1F900..1F9FF; Supplemental Symbols and Pictographs
+ 1FA00..1FA6F; Chess Symbols
+ 1FA70..1FAFF; Symbols and Pictographs Extended-A
+ 1FB00..1FBFF; Symbols for Legacy Computing
 -20000..2A6DF; CJK Unified Ideographs Extension B
 -2A700..2B73F; CJK Unified Ideographs Extension C
 -2B740..2B81F; CJK Unified Ideographs Extension D
 -2B820..2CEAF; CJK Unified Ideographs Extension E
 -2CEB0..2EBEF; CJK Unified Ideographs Extension F
+-2EBF0..2EE5F; CJK Unified Ideographs Extension I
 -2F800..2FA1F; CJK Compatibility Ideographs Supplement
+-30000..3134F; CJK Unified Ideographs Extension G
+-31350..323AF; CJK Unified Ideographs Extension H
 -E0000..E007F; Tags
 -E0100..E01EF; Variation Selectors Supplement
 +# 20000..2A6DF; CJK Unified Ideographs Extension B
@@ -396,7 +402,10 @@ index a4f851b..fd375bb 100644
 +# 2B740..2B81F; CJK Unified Ideographs Extension D
 +# 2B820..2CEAF; CJK Unified Ideographs Extension E
 +# 2CEB0..2EBEF; CJK Unified Ideographs Extension F
++# 2EBF0..2EE5F; CJK Unified Ideographs Extension I
 +# 2F800..2FA1F; CJK Compatibility Ideographs Supplement
++# 30000..3134F; CJK Unified Ideographs Extension G
++# 31350..323AF; CJK Unified Ideographs Extension H
 +# E0000..E007F; Tags
 +# E0100..E01EF; Variation Selectors Supplement
  F0000..FFFFF; Supplementary Private Use Area-A
