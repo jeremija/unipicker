@@ -14,13 +14,13 @@ index a4f851b..fd375bb 100644
 -0800..083F; Samaritan
 -0840..085F; Mandaic
 -0860..086F; Syriac Supplement
--08A0..08FF; Arabic Extended-B
+-0870..089F; Arabic Extended-B
 -08A0..08FF; Arabic Extended-A
 +# 07C0..07FF; NKo
 +# 0800..083F; Samaritan
 +# 0840..085F; Mandaic
 +# 0860..086F; Syriac Supplement
-+# 08A0..08FF; Arabic Extended-B
++# 0870..089F; Arabic Extended-B
 +# 08A0..08FF; Arabic Extended-A
  0900..097F; Devanagari
  0980..09FF; Bengali
