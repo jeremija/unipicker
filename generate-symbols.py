@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
+import sys
 import unicodedata
 
 ranges = []
-with open("Blocks.txt", "r") as f:
+with open(sys.argv[1], "r") as f:
     for line in f:
         if line.startswith("#") or len(line) <= 1:
             continue

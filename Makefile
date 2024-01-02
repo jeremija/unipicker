@@ -10,10 +10,10 @@ Blocks.txt:
 BlocksReduced.txt: Blocks.txt Blocks.patch
 	cp Blocks.txt $@
 	patch --merge $@ -p1 < Blocks.patch
-	rm *.orig
+	rm -f *.orig
 
 symbols: BlocksReduced.txt
-	./generate-symbols.py > "$@"
+	./generate-symbols.py $< > "$@"
 
 install: symbols
 	install -d -m755 $(PREFIX)/bin
