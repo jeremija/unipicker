@@ -20,6 +20,10 @@ Running with `fzf`:
 
 ![Running with fzf](http://i.imgur.com/Q6bSd0S.png)
 
+Running with `fzf` (version => 0.53) in `tmux` :
+
+![Running with fzf](https://i.imgur.com/T3Lu9VF.gif)
+
 Running with `rofi -dmenu`:
 
 ![Running with rofi](http://i.imgur.com/q1eE3vA.png)
@@ -36,6 +40,25 @@ xclip can be installed in various linux distros:
 - Arch Linux: `pacman -S xclip`
 
 The `pbcopy` utility will be used on a Mac, which is installed by default.
+
+If the `fzf` version is greater than 0.53, it will use the `--tmux` switch by 
+default. If not run in tmux, it will have no effect. Uses `awk` and `bc` to 
+calculate the `fzf` version; if they are not present, it will silently assume 
+the version to be < 0.53 .
+
+If you wish to bind it to a key in tmux to invoke as in the video above, use the following:
+
+```
+unbind e
+bind e if-shell -b '/path/to/unipicker' "send-keys ''"
+```
+
+If you want to add command-line arguments, do it like so:
+
+```
+unbind e
+bind e if-shell -b '/path/to/unipicker --copy-command /path/to/copycommand' "send-keys ''"
+```
 
 ## Installation
 

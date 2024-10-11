@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+# should be transparent if installed per the documentation, but if you just 
+# symlink from the source directory, then it'll work from there too. 
+SCRIPTDIR="$(dirname $(readlink -f "$0"))"
 should_copy=false
 
 if [ -f /etc/unipickerrc ]; then
@@ -17,8 +20,25 @@ case "$OSTYPE" in
   *)       os_copy_command="xclip -selection clipboard";;
 esac
 
-symbols_file="${UNIPICKER_SYMBOLS_FILE:-${PWD}/symbols}"
-select_command=${UNIPICKER_SELECT_COMMAND:-fzf}
+
+# because the select command only takes one positional argument, defaulting to --tmux for
+# fzf if the version is > 0.53.0. If not in a tmux session, no effect.
+if [ -f $(which bc) ] && [ -f $(which awk) ];then 
+    # not adding an official dependency, so will fallback silently; 
+    t_version=$(fzf --version | awk '{print $1}')
+    result=$(echo "$t_version > 0.53" | bc)
+else
+    result=0
+fi
+
+if [ $result -eq 1 ]; then
+    select_command=${UNIPICKER_SELECT_COMMAND:-fzf --tmux}
+else
+    select_command=${UNIPICKER_SELECT_COMMAND:-fzf}
+fi
+
+symbols_file="${UNIPICKER_SYMBOLS_FILE:-${SCRIPTDIR}/symbols}"
+#select_command=${UNIPICKER_SELECT_COMMAND:-fzf --tmux}
 copy_command=${UNIPICKER_COPY_COMMAND:-${os_copy_command}}
 
 usage () {
