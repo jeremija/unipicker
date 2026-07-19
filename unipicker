@@ -24,7 +24,7 @@ copy_command=${UNIPICKER_COPY_COMMAND:-${os_copy_command}}
 usage () {
   echo "Select unicode character by description"
   echo ""
-  echo "Usage: unipicker [--command cmd] [--copy-command cmd ] [--copy] [--list]"
+  echo "Usage: unipicker [--command cmd] [--copy-command cmd ] [--copy] [--list] [emoji_name]"
   echo ""
   echo "Arguments:"
   echo "  --command       Overrides default select command"
@@ -37,6 +37,17 @@ usage () {
   echo "  UNIPICKER_SELECT_COMMAND  Command to use for selecting (= $select_command)"
   echo "  UNIPICKER_COPY_COMMAND    Command to use for copying (= $copy_command)"
   echo "  UNIPICKER_SYMBOLS_FILE    Location of symbols (= $symbols_file)"
+}
+
+copy_emoji () {
+    if ! [ -v letter ]; then
+        letter=$(cat "$symbols_file" | eval $select_command | sed -E 's/^(.).*/\1/g')
+    fi
+
+    echo "$letter"
+    if [ "$should_copy" = true ];then
+      echo -n "$letter" | $copy_command
+    fi
 }
 
 while [ -n "$1" ];do
@@ -63,15 +74,11 @@ while [ -n "$1" ];do
       usage
       exit;;
     *)
-      echo "Invalid argument: $1"
-      exit 1;;
+      letter=$(cat "$symbols_file" | eval $select_command --filter=$1 | head -n 1 | sed -E 's/^(.).*/\1/g')
+      copy_emoji
+      exit 0;;
   esac
   shift
 done
 
-letter=$(cat "$symbols_file" | eval $select_command | sed -E 's/^(.).*/\1/g')
-
-echo "$letter"
-if [ "$should_copy" = true ];then
-  echo -n "$letter" | $copy_command
-fi
+copy_emoji
